@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>C:\Users\Jobin\OneDrive - Addend Analytics LLP\Desktop\CICD\CICD_Repos\Database3\Database3\bin\Debug\dacpac\</OutputPath>
+    <OutputPath>C:\Users\Jobin\OneDrive - Addend Analytics LLP\Desktop\CICD\CICD_Repos\Database3\Database3\dacpac\</OutputPath>
     <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <DebugSymbols>true</DebugSymbols>
