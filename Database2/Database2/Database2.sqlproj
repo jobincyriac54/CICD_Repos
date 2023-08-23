@@ -3,17 +3,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>Database1</Name>
+    <Name>Database2</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{199d0354-d7a6-4db9-9d2f-3a1ae8e965b2}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{42467c85-fb90-43de-b186-2b1ad0a3c3b4}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>Database1</RootNamespace>
-    <AssemblyName>Database1</AssemblyName>
-    <ModelCollation>1033,CI</ModelCollation>
+    <RootNamespace>Database2</RootNamespace>
+    <AssemblyName>Database2</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,9 +22,6 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
-    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
-    <GenerateCreateScript>False</GenerateCreateScript>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -38,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>C:\Users\Jobin\OneDrive - Addend Analytics LLP\Desktop\CICD\CICD_Repos\Database1\Database1\DacPac</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <DebugSymbols>true</DebugSymbols>
@@ -59,41 +56,5 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Tables\" />
-    <Folder Include="Security\" />
-    <Folder Include="dbo\Stored Procedures\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="dbo\Tables\demoempdestination.sql" />
-    <Build Include="dbo\Tables\StudentInfoFinal.sql" />
-    <Build Include="dbo\Tables\RPD_State.sql" />
-    <Build Include="dbo\Tables\MRI_Bldg.sql" />
-    <Build Include="dbo\Tables\RPD_Site.sql" />
-    <Build Include="dbo\Tables\%27Building _%27.sql" />
-    <Build Include="dbo\Tables\State_.sql" />
-    <Build Include="dbo\Tables\demoemp.sql" />
-    <Build Include="dbo\Tables\demoempmain.sql" />
-    <Build Include="dbo\Tables\testmain.sql" />
-    <Build Include="dbo\Tables\file_source22.sql" />
-    <Build Include="dbo\Tables\watermarktable.sql" />
-    <Build Include="dbo\Tables\UniversityInfo.sql" />
-    <Build Include="dbo\Tables\CollegeInfo.sql" />
-    <Build Include="dbo\Tables\CourseInfo.sql" />
-    <Build Include="dbo\Tables\paypal_invoices.sql" />
-    <Build Include="dbo\Tables\azureparameters.sql" />
-    <Build Include="dbo\Tables\StudentInfo.sql" />
-    <Build Include="dbo\Tables\ProfessorInfo.sql" />
-    <Build Include="dbo\Tables\DegreeInfo.sql" />
-    <Build Include="dbo\Tables\SubjectInfo.sql" />
-    <Build Include="dbo\Tables\temp.sql" />
-    <Build Include="Security\test01.sql" />
-    <Build Include="Security\Test01_1.sql" />
-    <Build Include="Security\test03.sql" />
-    <Build Include="Security\test03_1.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
-    <Build Include="dbo\Stored Procedures\updtdrpdsitebuildingidnull.sql" />
-    <Build Include="dbo\Stored Procedures\updaterpd.sql" />
-    <Build Include="dbo\Stored Procedures\update_watermark_table.sql" />
   </ItemGroup>
 </Project>
